@@ -6,7 +6,7 @@ print("Hello world")
 a=22;
 b=5;
 c=a//b;
-print(c)
+print(c) #imprime 4
 
 #para exponenciação, usar **
 
@@ -86,4 +86,97 @@ print(varTeste)
 var_sem_espaco= varTeste.strip()
 print(var_sem_espaco)
 
+#declarando duas variáveis simultaneamente ex:
+
+nome, idade="cláudio", 33
+
+print("Olá,",nome.capitalize(),"sua idade é:", idade)
+
+#Python é case sensitive
+
+teste = "Flamento" =="flamento"
+print(teste) #resultado é False
+
+_var=5;
+print(_var)#Uma variável pode começar com _
+
+teste=bool(0)
+print(teste) #Imprime false
+
+time="Flamengo"
+jogador="Rogério Ceni"
+
+teste=time[7]==jogador[1]
+print(teste)#Imprime True
+
+#Tipos de dados -Tópico muito relevante para concursos e Análise de dados >>
+#Listas Coleção de valores ordenados, mutáveis, indexados que pode conter valores duplicados, separados por colchetes
+listaFrutas=['maça', 'banana','mamão','laranja','melancia', 'limão', 'abacaxi',"pera"]
+
+#print(listaFrutas[2*2])
+print("Lista de frutas:")
+for x in listaFrutas:
+    print(x)
+    
+print(listaFrutas)
+
+listaFrutas[1]='manga'# altera um elemento da lista
+
+print(listaFrutas[-1])#mostra o último elemento da lista
+
+print(listaFrutas[1:3])#mostra posição 1 e 2, mas não a 3
+
+#Funções com listas>>
+
+# del - remove um item ou a lista inteira
+
+del listaFrutas[0]#remove o primeiro item da lista > maça
+
+print(listaFrutas) #mostra a lista sem o item recém deletado
+
+#clear() Função utilizada para limpar uma lista. Ex>>
+
+listateste=['1','2','3','4','5','6','7','8','9','0']
+
+print(listateste.clear())
+
+# len() serve para informar quantos itens tem numa lista
+
+print(len(listaFrutas)) # Retorna 07
+
+#Para adicionar itens, temos as funções append() e insert() >>
+
+listaFrutas.append("morango") #adiciona moranto a lista, no final da lista
+
+print(listaFrutas)#mostra a lista atualizada com o 'morango'
+
+
+listaFrutas.insert(0,"ameixa")#Essa função permite inserir um item em uma posição específica.
+
+print(listaFrutas)
+
+#Para remover itens da lista temos as funções remove() e pop()
+
+#remove() é utilizado para remover a primeira ocorrência de um item na lista
+
+familia= ['Junior', 'Ligia','Maria','Cláudio','Maria']
+
+familia.remove('Maria')#remove o elemento 2 da lista Família
+
+print(familia)#mostra a lista atualizada
+
+#pop() Remove item especificado ou o primeiro da PILHA
+
+familia.pop() #remove Maria
+
+print (familia)
+
+familia.pop(0) # remove Junior- primeiro item da lista
+
+print(familia)# mostra a lista sem "Junior"
+
+#copy() Função utilizada para copiar uma lista qualquer
+
+lista_nova=familia.copy()
+print(lista_nova)
 
