@@ -235,3 +235,27 @@ print(carro)
 carro['cor']='prata' # Acrescenta nova chave e valor no dicionário
 print(carro)
 
+#Estruturas de controle Sem novidades IF, ELIF, ELSE, While:>>>
+
+idade_int = 1
+
+while idade_int !=99:
+    print("Por favor, informe sua idade")
+    idade=input() #entrada externa
+    idade_int=int(idade)
+    if idade_int>=18 and idade_int<80:
+        print("Eleitor de voto obrigatório")
+    elif idade_int<18 and idade_int>=16 or idade_int>80:
+        print("Eleitor de voto Opcional")
+    else:
+        print("Criança não vota")
+print("até logo")
+
+
+print(carro)
+
+for x in carro:
+    print(x)
+
+for x in carro:
+    print(carro[x])
