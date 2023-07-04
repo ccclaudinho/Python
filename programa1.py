@@ -180,3 +180,58 @@ print(familia)# mostra a lista sem "Junior"
 lista_nova=familia.copy()
 print(lista_nova)
 
+#Função count() usada para informar a quantidade de vezes que determinado item aparece numa lista >> ex
+Letras= ['a','b','c','d','e','a','a']
+
+print("a letra a aparece", Letras.count('a'), 'vezes')
+
+#reverse() função utilziada para inverter a ordem dos itens da lista
+
+lista1=['um','dois','três']
+lista1.reverse()
+print (lista1)
+
+#sort() função utilizada para ordenar os elementos da lista
+
+lista=['a', 'd','b','c']
+
+lista.sort(reverse=True)
+
+print(lista)
+
+#extend() Função utilizada para acrescentar uma lista no final da outra
+abc=['a','b','c']
+d_ef=['d','e','f']
+
+abc.extend(d_ef) #anexa as listas
+
+print(abc)#mostras as listas anexadas
+
+#index() retorna a posição da primeira ocorrência de um det. elemento
+print(abc.index('c'))#mostra o número 2
+
+#range() utilizada para criar listas numéricas de forma fácil.
+
+#Tupla - Representada por parênteses.
+
+tupla=('maça','banana',True,'bola')
+
+print(tupla)
+# tupla[1]='limão' essa operação não é suportada pela tupla, da erro!
+
+lista_tupla=list(tupla) #tupla convertida em Lista
+print(lista_tupla) #Exibe a lista 
+
+#set  - representado entre chaves{} - mutável, não ordenado
+#dicionário - É uma coleção de valores desordenador, mutáveis e indexáveis. >> delimitados por chaves {} como o set, porém no dicionário as chaves delimitam um conjunto chave: valor
+carro={'marca':'ford','modelo':'escort','ano':1984}
+
+print(carro['marca'])
+
+carro['ano']=1992 #atualiza o ano do escortinho
+
+print(carro)
+
+carro['cor']='prata' # Acrescenta nova chave e valor no dicionário
+print(carro)
+
