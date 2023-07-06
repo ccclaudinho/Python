@@ -259,3 +259,7 @@ for x in carro:
 
 for x in carro:
     print(carro[x])
+    
+print(type(carro)) #função serve para descobrir o tipo de determinado elemento.
+
+print("Eu gosto de jogar /bola")
